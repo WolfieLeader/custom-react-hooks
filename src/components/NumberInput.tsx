@@ -1,25 +1,25 @@
 import React from "react";
 
-interface TextInputProps extends React.HTMLAttributes<HTMLInputElement> {
-  value: string;
-  setValue: (value: string) => void;
+interface NumberInputProps extends React.HTMLAttributes<HTMLInputElement> {
+  value: number;
+  setValue: (value: number) => void;
   className?: string;
   placeholder?: string;
 }
 
-const TextInput = ({ value, setValue, className, placeholder = "Enter Text", ...attributes }: TextInputProps) => {
+const NumberInput = ({ value, setValue, className, placeholder = "Enter Number", ...attributes }: NumberInputProps) => {
   return (
     <input
-      type="text"
+      type="number"
       className={`px-2 py-1 mx-1 my-1 border-2 rounded-sm border-slate-950 bg-slate-200 dark:border-slate-200 dark:bg-slate-950 ${className}`}
       value={value}
       placeholder={placeholder}
       onChange={(e) => {
-        setValue(e.target.value);
+        setValue(Number(e.target.value));
       }}
       {...attributes}
     />
   );
 };
 
-export default TextInput;
+export default NumberInput;
