@@ -4,7 +4,7 @@ import useUserData from "./useUserData";
 const UserDataComponent = () => {
   const { os, browser, timezone } = useUserData();
   return (
-    <Box title="usUseData Hook">
+    <Box title="useUserData Hook">
       <h2>Operation System: {os}</h2>
       <h2>Browser: {browser}</h2>
       <h2>
