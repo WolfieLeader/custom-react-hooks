@@ -10,13 +10,17 @@ const SizeComponent = () => {
   return (
     <Box title="useSize & useWindowSize Hooks" ref={boxRef}>
       <h2>
-        Box Size: {height}px X {width}px
+        Box Size:
+        <span className="text-orange-700 dark:text-orange-600 font-bold">{height}px</span> X{" "}
+        <span className="text-orange-700 dark:text-orange-600 font-bold">{width}px</span>
       </h2>
       <h2>
-        Box Position: x:{x}, y:{y}
+        Box Position: top: <span className="text-orange-700 dark:text-orange-600 font-bold">{x}</span>, left:{" "}
+        <span className="text-orange-700 dark:text-orange-600 font-bold">{y}</span>
       </h2>
       <h2>
-        Window Size: {windowHeight}px X {windowWidth}px
+        Window Size: <span className="text-orange-700 dark:text-orange-600 font-bold">{windowHeight}px</span> X{" "}
+        <span className="text-orange-700 dark:text-orange-600 font-bold">{windowWidth}px</span>
       </h2>
     </Box>
   );

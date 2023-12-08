@@ -10,7 +10,7 @@ import DebounceThrottleComponent from "./hooks/useDebounce&useThrottle/DebounceT
 
 const App = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full h-full px-6 py-4 text-slate-950 bg-slate-200 dark:text-slate-200 dark:bg-slate-950">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full h-full px-6 py-4 text-slate-950 bg-slate-300 dark:text-slate-200 dark:bg-slate-950">
       <DarkModeComponent />
       <ToggleComponent />
       <UserDataComponent />

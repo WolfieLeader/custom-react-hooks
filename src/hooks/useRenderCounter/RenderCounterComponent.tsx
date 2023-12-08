@@ -8,7 +8,9 @@ const RenderCounterComponent = () => {
   const { value, toggleValue } = useToggle();
   return (
     <Box title="useRenderCounter Hook">
-      <h2>Render Counter: {renderCount}</h2>
+      <h2>
+        Render Counter: <span className="text-orange-700 dark:text-orange-600 font-bold">{renderCount}</span>
+      </h2>
       <div hidden>{value}</div>
       <Button onClick={() => toggleValue()}>Cause Render</Button>
     </Box>

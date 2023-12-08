@@ -5,10 +5,15 @@ const UserDataComponent = () => {
   const { os, browser, timezone } = useUserData();
   return (
     <Box title="useUserData Hook">
-      <h2>Operation System: {os}</h2>
-      <h2>Browser: {browser}</h2>
       <h2>
-        Timezone: {timezone.location}, UTC: {timezone.utc}
+        Operation System: <span className="text-orange-700 dark:text-orange-600 font-bold">{os}</span>
+      </h2>
+      <h2>
+        Browser: <span className="text-orange-700 dark:text-orange-600 font-bold">{browser}</span>
+      </h2>
+      <h2>
+        Timezone: <span className="text-orange-700 dark:text-orange-600 font-bold">{timezone.location}</span>, UTC:{" "}
+        <span className="text-orange-700 dark:text-orange-600 font-bold">{timezone.utc}</span>
       </h2>
     </Box>
   );

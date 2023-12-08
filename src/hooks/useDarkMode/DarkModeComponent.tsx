@@ -7,7 +7,9 @@ const DarkModeComponent = () => {
 
   return (
     <Box title="useDarkMode Hook">
-      <h2 className="text-xl">Theme: {theme}</h2>
+      <h2 className="text-xl">
+        Theme: <span className="text-orange-700 dark:text-orange-600 font-bold">{theme}</span>
+      </h2>
       <Button onClick={toggleTheme}>Toggle Theme</Button>
     </Box>
   );

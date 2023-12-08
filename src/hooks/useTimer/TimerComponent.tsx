@@ -11,13 +11,13 @@ const TimerComponent = () => {
   const { count, start, reset, pause } = useTimer(initialCount, endCount);
   return (
     <Box title="useTimer Hook">
-      <h2>Timer: {count} seconds</h2>
+      <h2>
+        Timer: <span className="text-orange-700 dark:text-orange-600 font-bold">{count} seconds</span>
+      </h2>
       <div>
         <h3>
-          Initial count: <NumberInput value={initialCount} setValue={setInitialCount} />
-        </h3>
-        <h3>
-          End count: <NumberInput value={endCount} setValue={setEndCount} />
+          Initial count: <NumberInput value={initialCount} setValue={setInitialCount} />, End count:{" "}
+          <NumberInput value={endCount} setValue={setEndCount} />
         </h3>
       </div>
       <div>
